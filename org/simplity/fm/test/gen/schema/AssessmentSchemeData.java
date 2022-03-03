@@ -1,0 +1,155 @@
+package org.simplity.fm.test.gen.schema;
+
+import org.simplity.fm.core.data.SchemaData;
+import java.time.Instant;
+import java.time.LocalDate;
+
+/**
+ * class that represents structure of assessmentScheme
+ */ 
+public class AssessmentSchemeData extends SchemaData {
+
+	protected AssessmentSchemeData(final AssessmentSchemeSchema schema, final Object[] data) {
+		super(schema, data);
+	}
+
+	@Override
+	protected AssessmentSchemeData newInstance(final Object[] arr) {
+		return new AssessmentSchemeData((AssessmentSchemeSchema) this.schema, arr);
+	}
+
+	/**
+	 * set value for assessmentSchemeId
+	 * @param value to be assigned to assessmentSchemeId
+	 */
+	public void setAssessmentSchemeId(long value){
+		this.fieldValues[0] = value;
+	}
+
+	/**
+	 * @return value of assessmentSchemeId
+	 */
+	public long getAssessmentSchemeId(){
+		return super.getLongValue(0);
+	}
+
+	/**
+	 * set value for instituteId
+	 * @param value to be assigned to instituteId
+	 */
+	public void setInstituteId(long value){
+		this.fieldValues[1] = value;
+	}
+
+	/**
+	 * @return value of instituteId
+	 */
+	public long getInstituteId(){
+		return super.getLongValue(1);
+	}
+
+	/**
+	 * set value for name
+	 * @param value to be assigned to name
+	 */
+	public void setName(String value){
+		this.fieldValues[2] = value;
+	}
+
+	/**
+	 * @return value of name
+	 */
+	public String getName(){
+		return super.getStringValue(2);
+	}
+
+	/**
+	 * set value for code
+	 * @param value to be assigned to code
+	 */
+	public void setCode(String value){
+		this.fieldValues[3] = value;
+	}
+
+	/**
+	 * @return value of code
+	 */
+	public String getCode(){
+		return super.getStringValue(3);
+	}
+
+	/**
+	 * set value for cieCalculation
+	 * @param value to be assigned to cieCalculation
+	 */
+	public void setCieCalculation(String value){
+		this.fieldValues[4] = value;
+	}
+
+	/**
+	 * @return value of cieCalculation
+	 */
+	public String getCieCalculation(){
+		return super.getStringValue(4);
+	}
+
+	/**
+	 * set value for minCieMarks
+	 * @param value to be assigned to minCieMarks
+	 */
+	public void setMinCieMarks(long value){
+		this.fieldValues[5] = value;
+	}
+
+	/**
+	 * @return value of minCieMarks
+	 */
+	public long getMinCieMarks(){
+		return super.getLongValue(5);
+	}
+
+	/**
+	 * set value for isActive
+	 * @param value to be assigned to isActive
+	 */
+	public void setIsActive(boolean value){
+		this.fieldValues[6] = value;
+	}
+
+	/**
+	 * @return value of isActive
+	 */
+	public boolean getIsActive(){
+		return super.getBoolValue(6);
+	}
+
+	/**
+	 * set value for createdAt
+	 * @param value to be assigned to createdAt
+	 */
+	public void setCreatedAt(Instant value){
+		this.fieldValues[7] = value;
+	}
+
+	/**
+	 * @return value of createdAt
+	 */
+	public Instant getCreatedAt(){
+		return super.getTimestampValue(7);
+	}
+
+	/**
+	 * set value for updatedAt
+	 * @param value to be assigned to updatedAt
+	 */
+	public void setUpdatedAt(Instant value){
+		this.fieldValues[8] = value;
+	}
+
+	/**
+	 * @return value of updatedAt
+	 */
+	public Instant getUpdatedAt(){
+		return super.getTimestampValue(8);
+	}
+}

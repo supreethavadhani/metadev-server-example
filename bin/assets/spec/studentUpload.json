@@ -1,0 +1,166 @@
+{
+"lists":{
+},
+    "inserts": [
+
+
+        {
+            "users": {
+                "user_id": ">student_id",
+                "institute_id": "ctxInstituteId",
+                "trust_id": "0",
+                "user_type": "$userType",
+                "login_id": "",
+                "password": "",
+                "login_token": "",
+                "login_enabled": "FALSE",
+                "reset_password_count": "",
+                "login_count": "",
+                "confirmation_token": "",
+                "current_login_ip": "",
+                "previous_login_ip": "",
+                "current_login_at": "",
+                "previous_login_at": ""
+            }
+        },
+        {
+            "users": {
+                "user_id": ">mother_id",
+                "institute_id": "ctxInstituteId",
+                "trust_id": "0",
+                "user_type": "gaurdian",
+                "login_id": "",
+                "password": "",
+                "login_token": "",
+                "login_enabled": "FALSE",
+                "reset_password_count": "",
+                "login_count": "",
+                "confirmation_token": "",
+                "current_login_ip": "",
+                "previous_login_ip": "",
+                "current_login_at": "",
+                "previous_login_at": ""
+            }
+        },
+
+        {
+            "users": {
+                "user_id": ">father_id",
+                "institute_id": "ctxInstituteId",
+                "trust_id": "0",
+                "user_type": "gaurdian",
+                "login_id": "",
+                "password": "",
+                "login_token": "",
+                "login_enabled": "FALSE",
+                "reset_password_count": "",
+                "login_count": "",
+                "confirmation_token": "",
+                "current_login_ip": "",
+                "previous_login_ip": "",
+                "current_login_at": "",
+                "previous_login_at": ""
+            }
+        },
+
+        {
+            "students": {
+                "dependent_create": "Users",
+                "student_id": "%studentId",
+                "department_id": "getDepartmentId($F)",
+                "program_id": "getProgramId($F)",
+                "level_id*": "",
+                "temp_usn": "NA",
+                "usn": "$A",
+                "name": "$B",
+                "use_common_address*": "",
+                "present_address_line1": "$AA",
+                "present_address_line2": "$AB",
+                "present_city": "$AE",
+                "present_state": "$AD",
+                "present_pincode": "$AF",
+                "present_country": "$AC",
+                "address_line1": "$AA",
+                "address_line2": "$AB",
+                "city": "$AE",
+                "state": "$AD",
+                "pincode": "$AF",
+                "country": "$AC",
+                "phone_number": "$AB",
+                "email": "$C",
+                "gender": "$H",
+                "admission_quota": "$D",
+                "admitted_level": "$G",
+                "admission_date": "$S",
+                "blood_group": "$I",
+                "religion": "$K",
+                "caste": "$L",
+                "nationality": "$M",
+                "category": "$J",
+                "date_of_birth": "$N",
+                "peronal_id": "$P",
+                "place_of_birth": "$O",
+                "domicile_state": "$Q",
+                "previous_board": "$R",
+                "previous_class": "NA",
+                "previous_institute": "NA",
+                "qualifying_exam_rank": "$T"
+
+            }
+        },
+
+        {
+            "gaurdians": {
+                "dependent_create": "Users",
+                "guardian_id": "%father_id",
+                "student_id": "%student_id",
+                "relation_type": "FATHER",
+                "occupation": "NA",
+                "annualSalary": "0",
+                "qualifications": "NA",
+                "name": "$U",
+                "address_line1": "NA",
+                "address_line2": "NA",
+                "city": "NA",
+                "state": "NA",
+                "pincode": "NA",
+                "country": "NA",
+                "phone_number": "$W",
+                "email": "$X",
+                "gender": "M"
+
+            }
+        },
+
+        {
+            "gaurdians": {
+                "dependent_create": "Users",
+                "guardian_id": "%mother_id",
+                "student_id": "%studnet_id",
+                "relation_type": "MOTHER",
+                "occupation": "NA",
+                "annualSalary": "0",
+                "qualifications": "NA",
+                "name": "$V",
+                "address_line1": "NA",
+                "address_line2": "NA",
+                "city": "NA",
+                "state": "NA",
+                "pincode": "NA",
+                "country": "NA",
+                "phone_number": "$Y",
+                "email": "NA",
+                "gender": "F"
+
+            }
+        },
+
+        {
+            "class_register": {
+                "classId": "getClassId($AG,$AH)",
+                "studentId": "%studentId"
+            }
+        }
+    ]
+
+}

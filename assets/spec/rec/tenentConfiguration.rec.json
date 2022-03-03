@@ -1,0 +1,29 @@
+{
+    "name": "tenentConfiguration",
+    "nameInDb": "tenent_configurations",
+    "useTimestampCheck": false,
+    "operations": [
+        "get",
+        "create",
+        "update",
+        "filter",
+        "delete"
+    ],
+    "fields": [
+        {
+            "name": "tenentId",
+            "dataType": "id",
+            "dbColumnName": "tenent_id",
+            "fieldType": "primaryKey",
+            "label": "Tenents"
+        },
+        {
+             "name": "currentSeason",
+             "dataType": "id",
+             "dbColumnName": "current_season",
+             "fieldType": "requiredData"
+         }
+
+    ]
+}
+

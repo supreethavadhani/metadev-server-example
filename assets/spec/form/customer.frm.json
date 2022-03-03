@@ -1,0 +1,25 @@
+{
+    "description": "A simple customer CRUD form",
+    "name": "customer",
+    "recordName": "customer",
+    "serveGuests": true,
+    "operations": ["create"],
+     "controls": [
+        {
+            "name": "name",
+            "controlType":"input",
+            "label":"Customer Name"
+        },
+        {
+            "name": "email",
+            "controlType":"input",
+            "label":"email"
+        },
+         {
+            "name": "addressLine1",
+            "controlType":"input",
+            "label":"Address Line 1"
+        }
+      ]
+   }
+

@@ -1,0 +1,32 @@
+{
+    "description": "login is allowed when user is not alogged-in. Hence the special attribute serveGuests used",
+    "name": "userRegistration",
+    "recordName": "userRegistration",
+    "serveGuests": true,
+    "operations": [
+        "update"
+    ],
+    "controls": [
+     	{
+            "name": "otp",
+            "controlType": "input",
+            "label":"Enter the OTP received on your mobile"
+        },
+       
+        {
+            "name": "email",
+            "controlType": "input",
+            "label":"Enter Your E-mail"
+        },
+        {
+            "name": "newPassword",
+            "controlType": "password",
+            "label":"Password"
+        },
+        {
+            "name": "confirmPassword",
+            "controlType": "password",
+            "label":"Re-enter Password"
+        }
+      ]
+   }

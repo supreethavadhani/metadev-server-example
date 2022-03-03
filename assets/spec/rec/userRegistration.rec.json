@@ -1,0 +1,26 @@
+{
+    "name": "userRegistration",
+    "fields": [
+        {
+            "name": "otp",
+            "dataType": "text",
+            "fieldType": "requiredData"
+        },
+        {
+            "name": "email",
+            "dataType": "email",
+            "fieldType": "requiredData"
+        },
+        {
+            "name": "newPassword",
+            "dataType": "text",
+            "fieldType": "requiredData"
+        },
+        {
+            "name": "confirmPassword",
+            "dataType": "text",
+            "fieldType": "requiredData"
+        }
+        
+    ]
+}

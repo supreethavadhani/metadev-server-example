@@ -1,0 +1,31 @@
+{
+    "name": "customer",
+    "nameInDb": "customers",
+    "operations":["create","update"],
+    "fields": [
+        {
+            "name": "customerId",
+            "dataType": "flexibleId",
+            "dbColumnName": "customer_id",
+            "fieldType": "generatedPrimaryKey"
+        },
+        {
+            "name": "name",
+            "dataType": "name",
+            "dbColumnName": "name",
+            "fieldType": "requiredData"
+        },
+        {
+            "name": "email",
+            "dataType": "email",
+            "dbColumnName": "email",
+            "fieldType": "requiredData"
+        },
+        {
+            "name": "addressLine1",
+            "dataType": "text",
+            "dbColumnName": "address_line1",
+            "fieldType": "optionalData"
+        }
+    ]
+}

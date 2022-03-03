@@ -1,0 +1,1 @@
+web: java -classpath "lib/*" in.cognitron.lms.Server $PORT

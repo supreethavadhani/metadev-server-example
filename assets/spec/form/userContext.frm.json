@@ -1,0 +1,5 @@
+{
+    "name": "userContext",
+    "description": "used by client-app to type-define client-conext. no operations are allowed.",
+    "recordName": "userContext"
+}

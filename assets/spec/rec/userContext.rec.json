@@ -1,0 +1,69 @@
+{
+    "name": "userContext",
+    "nameInDb": "users",
+    "useTimestampCheck": false,
+    "fields": [
+        {
+            "name": "userId",
+            "dataType": "flexibleId",
+            "dbColumnName": "user_id",
+            "fieldType": "primaryKey"
+        },
+        {
+            "name": "instituteId",
+            "dataType": "tenantKey",
+            "dbColumnName": "institute_id",
+            "fieldType": "tenantKey"
+        },
+        {
+            "name": "trustId",
+            "dataType": "id",
+            "dbColumnName": "trust_id",
+            "fieldType": "optionalData"
+        },
+        {
+            "name": "userType",
+            "dataType": "userType",
+            "dbColumnName": "user_type",
+            "fieldType": "requiredData",
+            "defaultValue": "Student",
+            "listName": "userType"
+        },
+        {
+            "name": "loginId",
+            "dataType": "loginId",
+            "dbColumnName": "login_id",
+            "fieldType": "requiredData"
+        },
+        {
+            "name": "name",
+            "dataType": "text",
+            "fieldType": "optionalData"
+        },
+        {
+            "name": "phoneNumber",
+            "dataType": "text",
+            "fieldType": "optionalData"
+        },
+        {
+            "name": "email",
+            "dataType": "text",
+            "fieldType": "optionalData"
+        },
+        {
+            "name": "designationId",
+            "dataType": "id",
+            "fieldType": "optionalData"
+        },
+        {
+            "name": "designation",
+            "dataType": "text",
+            "fieldType": "optionalData"
+        },
+        {
+            "name": "allowedPages",
+            "dataType": "text",
+            "fieldType": "optionalData"
+        }
+    ]
+}
