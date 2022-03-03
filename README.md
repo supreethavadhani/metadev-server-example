@@ -1,1 +1,1 @@
-Server side code repository for Banyan Tree 
+Metadev example 
