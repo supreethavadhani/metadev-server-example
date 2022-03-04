@@ -7,6 +7,3 @@ src/main/java/in/cognitron/lms/gen/form
 src/main/java/in/cognitron/lms/gen/list
 src/main/java/in/cognitron/lms/gen/schema
 src/main/java/in/cognitron/lms/gen/sql
-src/main/java/in/cognitron/lms/Bootstrapper.java
-src/main/java/in/cognitron/lms/gen.java
-
