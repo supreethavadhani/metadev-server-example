@@ -45,7 +45,7 @@ public class Bootstrapper implements AppConfigProvider {
 	private static IDbConnectionFactory dbSetupWithConString() {
 		final String conString = CON_STRING;
 		final String driverName = DRIVER_NAME;
-		logger.info("Setting up db with driver name = {} and connectionString=****", driverName);
+		logger.info("Hellllloooooooo Setting up db with driver name = {} and connectionString=****", driverName);
 		return DefaultConnectionFactory.getFactory(conString, driverName);
 	}
 
@@ -57,7 +57,7 @@ public class Bootstrapper implements AppConfigProvider {
 	@SuppressWarnings("unused")
 	private static IDbConnectionFactory dbSetupWithDataSource() {
 		final String dataSourceName = "the designated JNDI name as per the documentation of the container/framework that provides this service";
-		logger.info("Setting up db with dataSource name = {}", dataSourceName);
+		logger.info("Helloooooooooooooooo Setting up db with dataSource name = {}", dataSourceName);
 		return DefaultConnectionFactory.getFactory(dataSourceName);
 	}
 

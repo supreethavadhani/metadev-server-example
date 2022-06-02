@@ -1,7 +1,7 @@
 FROM openjdk:11
 
 #Copy project to docker container
-COPY ./ ./
+ADD ./ ./
 
 #Setting path to ENV variables
 ENV ROOT_DIR=src/main/java/in/cognitron/lms/
