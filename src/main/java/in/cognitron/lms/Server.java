@@ -1,4 +1,4 @@
- package in.cognitron.lms;
+package in.cognitron.lms;
 
 import org.simplity.fm.core.app.App;
 import org.simplity.fm.core.app.AppConfigProvider;
