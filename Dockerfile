@@ -1,20 +1,11 @@
 FROM openjdk:11
 
-#Copy project to docker container
-ADD ./ ./
+#Copy JAR file to contianer 
+COPY metadev-jar.jar metadev-jar.jar
 
-#Setting path to ENV variables
-ENV ROOT_DIR=src/main/java/in/cognitron/lms/
-ENV LIB_DIR=../../../../../../lib/*
-
-#Change directory to main directory
-WORKDIR ${ROOT_DIR}
-
-#Compile java code 
-RUN javac -cp "${LIB_DIR}" Server.java
-
-#Expose port
+#EXPOSE port 8080 to access app through localhost
+#from host machine
 EXPOSE 8080
 
-#Run application
-CMD java -cp "${LIB_DIR}" in.cognitron.lms.Server
+#Command to run JAR File
+CMD ["java","-jar","metadev-jar.jar"]
