@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2019 cognitron.in
- * all rights reserved
- */
-
 package in.cognitron.lms.service;
 
 import org.simplity.fm.core.Message;
@@ -17,6 +12,7 @@ import in.cognitron.lms.LmsServiceContext;
 public class Hello extends LmsService {
 	protected static final Logger logger = LoggerFactory.getLogger(Hello.class);
 	private static final String SERVICE_NAME = "Hello";
+
 	@Override
 	public String getId() {
 		return SERVICE_NAME;
@@ -24,9 +20,8 @@ public class Hello extends LmsService {
 
 	@Override
 	public void execute(final LmsServiceContext ctx, final IInputObject inputObject) throws Exception {
-				ctx.addMessage(Message.newMessage(MessageType.Info,"Hello From the other side"));
-			
-		}
+		ctx.addMessage(Message.newMessage(MessageType.Info, "Hello From the other side"));
 
 	}
 
+}
