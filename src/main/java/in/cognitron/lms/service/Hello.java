@@ -21,7 +21,6 @@ public class Hello extends LmsService {
 	@Override
 	public void execute(final LmsServiceContext ctx, final IInputObject inputObject) throws Exception {
 		ctx.addMessage(Message.newMessage(MessageType.Info, "Hello From the other side"));
-
 	}
 
 }
