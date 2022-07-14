@@ -3,7 +3,7 @@
     "tenantFieldName": "tenentId",
     "tenantDbName": "tenent_id",
     "runtimeLists": {
-        
+
     },
     "dataTypes": {
         "booleanTypes": {
@@ -54,24 +54,9 @@
                 "minVlue": -99999999999,
                 "maxValue": 9999999999999
             },
-            "income": {
-                "errorId": "invalidIncome",
-                "minVlue": 0,
-                "maxValue": 9999999999999
-            },
             "tenantKey": {
                 "errorId": "invalidTenentKey",
                 "maxValue": 9999999999999
-            },
-            "marks": {
-                "errorId": "invalidMraks",
-                "minVlue": 0,
-                "maxValue": 100
-            },
-            "valuationType": {
-                "errorId": "invalidValuationType",
-                "minVlue": 1,
-                "maxValue": 3
             }
         },
         "textTypes": {
@@ -110,18 +95,6 @@
             "loginId": {
                 "errorId": "invalidLoginId",
                 "maxLength": 50
-            },
-            "marksOrAb": {
-                "errorId": "invalidMarksOrAb",
-                "mnLength": 1,
-                "maxLength": 5,
-                "regex": "(ab|AB|Ab|\\d{0,2}\\.?\\d{0,2})"
-            },
-            "ppOrNp":{
-                "errorId": "invalidMarksOrAb",
-                "mnLength": 1,
-                "maxLength": 5,
-                "regex": "(pp|Pp|PP|pP|np|Np|nP|NP|^$)"
             },
             "name": {
                 "errorId": "invalidName",
@@ -203,128 +176,6 @@
                 "label": "trustee"
             }
         ],
-        "instituteType": [{
-                "value": "DSERTPS",
-                "label": "Karnataka State Syllabus Primary School"
-            },
-            {
-                "value": "DSERTPHS",
-                "label": "Karnataka State Syllabus Higher School"
-            },
-            {
-                "value": "CBSE ",
-                "label": "CBSE"
-            },
-            {
-                "value": "ENG_A_VTU",
-                "label": "Engineering College (Automonus Under VTU)"
-            },
-            {
-                "value": "ENG_VTU",
-                "label": "Engineering College ( VTU)"
-            }
-        ],
-        "admissionQuota": [{
-                "value": "CET",
-                "label": "CET"
-            },
-            {
-                "value": "COMEDK",
-                "label": "COMEDK"
-            },
-            {
-                "value": "CETSNQ",
-                "label": "CET-SNQ"
-            },
-            {
-                "value": "MANG",
-                "label": "MANAGEMENT"
-            },
-            {
-                "value": "ICD",
-                "label": "ICD"
-            },
-            {
-                "value": "NRI",
-                "label": "NRI"
-            },
-            {
-                "value": "GOI",
-                "label": "GOI"
-            },
-            {
-                "value": "Other",
-                "label": "Other"
-            }
-        ],
-        "religion": [{
-                "value": "Hindu",
-                "label": "Hindu"
-            },
-            {
-                "value": "Muslim",
-                "label": "Muslim"
-            },
-            {
-                "value": "Christian",
-                "label": "Christian"
-            },
-            {
-                "value": "Sikh",
-                "label": "Sikh"
-            },
-            {
-                "value": "Jain",
-                "label": "Jain"
-            },
-            {
-                "value": "Others",
-                "label": "Other"
-            }
-        ],
-        "relationType": [{
-                "value": "Mother",
-                "label": "Mother"
-            },
-            {
-                "value": "Father",
-                "label": "Father"
-            },
-            {
-                "value": "Legal Guardian",
-                "label": "Legal Guardian"
-            }
-        ],
-        "documentType": [{
-                "value": "Marks Card",
-                "label": "Marks Card"
-            },
-            {
-                "value": "Certificate",
-                "label": "Ceritifcate (e.g: Birth Certificate etc)"
-            },
-            {
-                "value": "Photo",
-                "label": "Photo"
-            },
-            {
-                "value": "Govt Id",
-                "label": "Govt Id(e.g.: Passport, DL etc)"
-            }
-        ],
-        "domicileState": [{
-                "value": "Karnataka",
-                "label": "Karnataka"
-            },
-            {
-                "value": "Non-Karnataka",
-                "label": "Non-Karnataka"
-            },
-            {
-                "value": "Foreign",
-                "label": "Foreign"
-            }
-        ],
         "gender": [{
                 "value": "Male",
                 "label": "Male"
@@ -341,158 +192,7 @@
                 "value": "Not Applicable",
                 "label": "Not Applicable"
             }
-        ],
-        "bloodGroup": [{
-                "value": "O -ve",
-                "label": "O -ve"
-            },
-            {
-                "value": "O +ve",
-                "label": "O +ve"
-            },
-            {
-                "value": "A -ve",
-                "label": "A -ve"
-            },
-            {
-                "value": "A +ve",
-                "label": "A +ve"
-            },
-            {
-                "value": "B -ve",
-                "label": "B -ve"
-            },
-            {
-                "value": "B +ve",
-                "label": "B +ve"
-            },
-            {
-                "value": "AB -ve",
-                "label": "AB -ve"
-            },
-            {
-                "value": "AB +ve",
-                "label": "AB +ve"
-            }
-        ],
-        "valuationRoundList": [{
-                "value": "1",
-                "label": "Initial"
-            },
-            {
-                "value": "2",
-                "label": "Revaluation"
-            },
-            {
-                "value": "3",
-                "label": "Challenge"
-            }
-        ],
-        "examTimeList": [{
-                "value": "2:00pm to 5:00pm",
-                "label": "2:00pm to 5:00pm"
-            },
-            {
-                "value": "9:30am to 12:30pm",
-                "label": "9:30am to 12:30pm"
-            },
-            {
-                "value": "1:30pm to 5:30pm",
-                "label": "1:30pm to 5:30pm"
-            }
-        ],
-        "examTypes": [{
-                "value": "1",
-                "label": "Normal"
-            },
-            {
-                "value": "2",
-                "label": "Make-up"
-            }
-        ],
-        "selectMethod": [{
-                "value": "1",
-                "label": "Best of"
-            },
-            {
-                "value": "2",
-                "label": "Average of"
-            },
-            {
-                "value": "3",
-                "label": "Compulsory"
-            }
         ]
     },
-    "keyedLists": {
-        "state": {
-            "130": [{
-                    "value": "Karnataka",
-                    "label": "Karnataka"
-                },
-                {
-                    "value": "Tamil Nadu",
-                    "label": "Tamil Nadu"
-                },
-                {
-                    "value": "Kerala",
-                    "label": "Kerala"
-                },
-                {
-                    "value": "Uttar Pradesh",
-                    "label": "Uttar Pradesh"
-                }
-            ],
-            "91": [{
-                    "value": "Karnataka",
-                    "label": "Karnataka"
-                },
-                {
-                    "value": "Tamil Nadu",
-                    "label": "Tamil Nadu"
-                },
-                {
-                    "value": "Kerala",
-                    "label": "Kerala"
-                },
-                {
-                    "value": "Uttar Pradesh",
-                    "label": "Uttar Pradesh"
-                }
-            ]
-        },
-        "valuationType": {
-            "1": [{
-                    "value": "1",
-                    "label": "I Valuation"
-                },
-                {
-                    "value": "2",
-                    "label": "II Val/Mod"
-                },
-                {
-                    "value": "3",
-                    "label": "III Valuation"
-                }
-            ],
-            "2": [{
-                    "value": "2",
-                    "label": "Revaluation"
-                },
-                {
-                    "value": "3",
-                    "label": "3rd Valuationn"
-                }
-            ],
-            "3": [{
-                    "value": "2",
-                    "label": "Challenge"
-                },
-                {
-                    "value": "3",
-                    "label": "3rd Valuation"
-                }
-            ]
-        }
-    }
+    "keyedLists": {}
 }

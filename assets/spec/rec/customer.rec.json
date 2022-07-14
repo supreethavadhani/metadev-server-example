@@ -26,6 +26,13 @@
             "dataType": "text",
             "dbColumnName": "address_line1",
             "fieldType": "optionalData"
+        },
+        {
+            "name": "gender",
+            "dataType": "text",
+            "dbColumnName": "gender",
+            "fieldType": "requiredData",
+            "listName":"gender"
         }
     ]
 }
