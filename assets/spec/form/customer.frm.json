@@ -23,7 +23,11 @@
             "name": "addressLine1",
             "controlType":"input",
             "label":"Address Line 1"
+        },
+        {
+         "name": "gender",
+         "controlType":"dropdown",
+         "label":"Gender"
         }
       ]
    }
-
